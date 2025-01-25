@@ -1,5 +1,4 @@
 <template>
-  <hello-world></hello-world>
   <h1>慕课乐高标准模版</h1>
   <ul>
     <li>开箱即用</li>
@@ -12,20 +11,12 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, getCurrentInstance, onMounted, inject } from 'vue';
-
+import { defineComponent } from 'vue';
+// export interface TestProps {
+//   name: string;
+// }
 export default defineComponent({
   name: 'App',
-  setup() {
-    // const { proxy } = getCurrentInstance();
-    console.log(getCurrentInstance, typeof (getCurrentInstance));
-    console.log(getCurrentInstance(), typeof (getCurrentInstance()));
-    // console.log(proxy, typeof (proxy));
-    onMounted(() => {
-      getCurrentInstance()?.appContext.config.globalProperties.$echo()
-
-    })
-  }
 });
 </script>
 
