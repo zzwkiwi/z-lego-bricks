@@ -8,10 +8,9 @@ const overrides = {
   compilerOptions: { declaration: true },
   exclude: [
     "node_modules",
-    "src/App.vue",
-    "src/main.ts"
   ]
 }
+export { name, file }
 export default {
   input: 'src/index.ts',
   output: {
